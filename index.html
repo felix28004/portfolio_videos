@@ -5,30 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio</title>
 </head>
 <body>
     
 <header class="intro">
-        <h1>Mi Portfolio de Edición</h1>
-        <p>Selecciona un juego para ver los vídeos editados</p>
+        <h1 class="neon">
+            <span class="parpadeo-lento"></span>Mis Ediciónes</h1>
+        <p>Selecciona un juego o saga para ver los vídeos editados</p>
     </header>
 
-    <main class="portfolio-grid">
-        <a href="juego1.html" class="game-button">
-            <h2>Zelda: Tears of the Kingdom</h2>
-        </a>
 
-        <a href="juego2.html" class="game-button">
-            <h2>Fortnite</h2>
-        </a>
 
-        <a href="juego3.html" class="game-button">
-            <h2>Super Smash Bros</h2>
-        </a>
+<main class="portfolio-grid">
+    <a href="zelda.html" class="game-button">
         
-        <a href="juego4.html" class="game-button">
-            <h2>Elden Ring</h2>
-        </a>
+        <picture class="game-picture">
+            <source media="(min-width: 768px)" srcset="img/spiderman-monitor.svg">
+            
+            <img src="img/spiderman-movil.png" alt="spiderman">
+        </picture>
+
+        <div class="game-overlay"></div>
+    </a>
+
+
+<a href="zelda.html" class="game-button">
+        
+        <picture class="game-picture">
+            <source media="(min-width: 768px)" srcset="img/zelda-desktop.jpg">
+            
+            <img src="img/zelda-movil.jpg" alt="Zelda Tears of the Kingdom">
+        </picture>
+
+        <div class="game-overlay"></div>
+    </a>
+
+
+<a href="zelda.html" class="game-button">
+        
+        <picture class="game-picture">
+            <source media="(min-width: 768px)" srcset="img/zelda-desktop.jpg">
+            
+            <img src="img/zelda-movil.jpg" alt="Zelda Tears of the Kingdom">
+        </picture>
+
+        <div class="game-overlay"></div>
+    </a>
+
     </main>
 
 </body>

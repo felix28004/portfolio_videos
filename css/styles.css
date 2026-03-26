@@ -1,3 +1,21 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Tilt+Neon&display=swap');
+
+/*letras neon*/
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        /* Estado ENCENDIDO (copiamos el text-shadow de arriba) */
+        text-shadow: 0 0 7px #fff, 0 0 10px #9900ff, 0 0 21px #9900ff, 0 0 42px #9900ff, 0 0 82px #9900ff;
+        color: #fff;
+    }
+    20%, 24%, 55% {
+        /* Estado APAGADO (sin brillos y color gris oscuro) */
+        text-shadow: none;
+        color: #330352;
+    }
+}
+
+
 /* =========================================
    1. ESTILOS BASE (Móviles por defecto)
    ========================================= */
@@ -9,27 +27,34 @@ body {
 }
 
 /* encabezado */
-.intro {
+.neon {
     text-align: center;
     padding: 40px 20px;
+      font-family: "Tilt Neon", sans-serif;
+    animation: flicker 2s infinite alternate;
+}
 
+.intro p {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 /* Estilos para los enlaces/botones de juegos */
-.game-button {
+
+.game-button{
+    position: relative; /* Fundamental para que la imagen no se salga */
+    overflow: hidden; /* Corta las esquinas de la imagen para que respete el borde redondeado */
     background-color: #2a2a2a; /* Color de fondo del botón */
     color: #ffffff; /* Color del texto */
     text-decoration: none; /* Quita el subrayado típico de los enlaces */
-    padding: 40px 20px;
     border-radius: 12px; /* Bordes redondeados */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px; /* Altura mínima para que parezcan tarjetas */
+    min-height: 90px; /* Altura mínima para que parezcan tarjetas */
     border: 2px solid transparent; /* Preparando un borde para el hover */
     transition: all 0.3s ease; /* Hace que las animaciones sean suaves */
-        background-color: rgb(30, 150, 210);
 
 }
 
@@ -42,11 +67,28 @@ body {
     
 }
 
+/* LA IMAGEN REAL (<img>) */
+.game-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Capa 1: Al fondo */
+}
+
+.game-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que se deforme */
+    display: block; /* Elimina un pequeño margen fantasma que a veces dejan las imágenes */
+}
+
 .game-button h2 {
     margin: 0;
-    font-size: 1.5rem;
-    
+    font-size: 20px;
 }
+
 
 /* El contenedor principal de tus vídeos */
 .portfolio-grid {
@@ -54,32 +96,53 @@ body {
     grid-template-columns: 1fr; /* 1 columna en teléfonos móviles */
     gap: 20px;
     padding: 20px;
-    background-color: chocolate;
+    background-color: #035234;
 }
 
 /* =========================================
    2. PANTALLAS MEDIANAS (Tablets: 768px o más)
    ========================================= */
 @media (min-width: 768px) {
+    BODY {
+        background-color: #035234; /*FONDO TEMPORAL*/
+    }
+
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
         padding: 40px;
     }
+
+    /* Estilos para los enlaces/botones de juegos */
+    .game-button {
+        padding: 40px 20px;
+    }
 }
 
-/* Estilos para los enlaces/botones de juegos */
-.game-button {
-    padding: 15px;
-}
+
 
 /* =========================================
    3. PANTALLAS GRANDES (Monitores: 1024px o más)
    ========================================= */
 @media (min-width: 1024px) {
+    BODY {
+        background-color: #521b03; /*FONDO TEMPORAL*/
+    }
+
     .portfolio-grid {
         grid-template-columns: repeat(4, 1fr); /* 3 columnas en escritorio */
         gap: 30px;
         max-width: 1600px; /* Evita que se estire demasiado en monitores gigantes */
         margin: 0 auto; /* Centra el contenedor en la pantalla */
+    }
+
+    /* Estilos para los enlaces/botones de juegos */
+    .game-button {
+        padding: 40px 20px;
+        transition: all 0.3s ease; /* Hace que las animaciones sean suaves */
+    }
+
+    .game-button h2 {
+    margin: 0;
+    font-size: 24rem;
     }
 }
