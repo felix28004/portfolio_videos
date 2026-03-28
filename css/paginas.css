@@ -1,0 +1,77 @@
+/* =========================================
+   ESTILOS PARA LAS PÁGINAS DE JUEGOS
+   ========================================= */
+
+/* Cabecera de la página */
+.juego-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+body.spiderman {
+    background-color: #b40b0d !important;
+}
+
+/* El botón de volver */
+.btn-volver {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #3a3a3a;
+    border-color: #00ffcc; /* Toque neón al pasar el ratón */
+    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
+}
+
+/* imagen del título */
+.titulo-juego{
+   width: 33%;
+}
+
+/* Cuadrícula para los vídeos (Móvil por defecto) */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la cuadrícula en la pantalla */
+   
+}
+
+/* Contenedor responsivo para que el iframe no se rompa */
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción panorámica perfecta */
+    background-color: #000; /* Fondo negro mientras carga el vídeo */
+    border-radius: 12px;
+    overflow: hidden; /* Corta las esquinas rectas del vídeo para que sean redondas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Ajustamos el iframe para que llene el contenedor */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Pantallas grandes (Tablets y Monitores) */
+@media (min-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 vídeos por fila */
+    }
+}

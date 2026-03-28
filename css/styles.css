@@ -30,7 +30,7 @@ body {
 .neon {
     text-align: center;
     padding: 40px 20px;
-      font-family: "Tilt Neon", sans-serif;
+    font-family: "Tilt Neon", sans-serif;
     animation: flicker 2s infinite alternate;
 }
 
@@ -61,7 +61,7 @@ body {
 /* Efecto al pasar el ratón por encima (Hover) */
 .game-button:hover {
     background-color: #3a3a3a;
-    border-color: #00ffcc; /* Un color llamativo al pasar el ratón */
+    border-color: #a600ff; /* Un color llamativo al pasar el ratón */
     transform: translateY(-5px); /* El botón se eleva un poco */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
     
@@ -96,7 +96,6 @@ body {
     grid-template-columns: 1fr; /* 1 columna en teléfonos móviles */
     gap: 20px;
     padding: 20px;
-    background-color: #035234;
 }
 
 /* =========================================
@@ -104,7 +103,7 @@ body {
    ========================================= */
 @media (min-width: 768px) {
     BODY {
-        background-color: #035234; /*FONDO TEMPORAL*/
+        background-color: #330352; /*FONDO TEMPORAL*/
     }
 
     .portfolio-grid {
@@ -125,7 +124,15 @@ body {
    ========================================= */
 @media (min-width: 1024px) {
     BODY {
-        background-color: #521b03; /*FONDO TEMPORAL*/
+        background-color: #330352; /*FONDO TEMPORAL*/
+    }
+
+    .neon {
+        font-size: 60px;
+    }
+
+    .intro p {
+     font-size: 23px;
     }
 
     .portfolio-grid {
