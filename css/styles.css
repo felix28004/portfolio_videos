@@ -99,6 +99,44 @@ body {
 }
 
 /* =========================================
+   ESTILOS PARA TARJETAS BLOQUEADAS
+   ========================================= */
+
+/* Comportamiento de la tarjeta inactiva */
+.tarjeta-bloqueada {
+    cursor: not-allowed; /* Cambia el ratón al símbolo de "prohibido" */
+}
+
+/* Quitamos el efecto hover para que no se mueva al pasar el ratón */
+.tarjeta-bloqueada:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+/* Efecto de misterio a la imagen: Blanco y negro + desenfoque */
+.tarjeta-bloqueada .game-img {
+    filter: grayscale(100%) blur(2px);
+    opacity: 0.6; /* La oscurece un poco más */
+}
+
+/* El diseño del cartel "Próximamente" */
+.etiqueta-proximamente {
+    position: relative; /* Para que quede por encima del filtro oscuro */
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #a600ff; /* Toque neón para mantener tu estilo */
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px; /* Separa las letras para darle aspecto de cine */
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3); /* Un pequeño brillo */
+}
+
+/* =========================================
    2. PANTALLAS MEDIANAS (Tablets: 768px o más)
    ========================================= */
 @media (min-width: 768px) {
