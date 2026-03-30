@@ -1,5 +1,5 @@
 /* =========================================
-   ESTILOS PARA LAS PÁGINAS DE JUEGOS
+   ESTILOS PARA SAGA spiderman
    ========================================= */
 
 /* Cabecera de la página */
@@ -72,33 +72,91 @@
     border: none;
 }
 
-.musica{
-    color: #000000;
-    text-decoration: none;
-    border: 4px solid #17363a;
+/* 3. LA CAJA DE MÚSICA OSCURA */
+.musica {
     border-radius: 12px;
+    padding: 20px; /* Padding superior extra para no chocar con el icono */
     text-align: center;
+    color: #ffffff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.musica a {
-    color: #ffffff; /* Cambia este código por el color que más te guste */
-    /* Al no poner text-decoration, el subrayado se queda visible */
+.musica h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.musica p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* 4. LA LISTA DE CANCIONES (¡Sin puntos negros!) */
+.lista-musica {
+    list-style-type: none; /* ¡MAGIA! Borramos los puntos negros por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+.lista-musica li {
+    margin-bottom: 15px; /* Separación entre canciones para que respiren */
+}
+
+.lista-musica a {
+    color: #fafcfc; 
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
+.lista-musica a:hover {
+    color: #0c0c0c; /* Se vuelve blanco al pasar el ratón */
+}
+
+.linea-divisoria {
+    border: none; /* 1. Quitamos el diseño antiguo del navegador */
+    height: 3px; /* 2. El grosor de la línea */
+    background-color: #000000; /* 3. El color de tu paleta de Miles Morales */
+    width: 80%; /* 5. Hace que no toque los bordes de la pantalla (queda más elegante) */
+    border-radius: 5px; /* 6. Suaviza las puntas haciéndolas redondas */
+}
+
 /* =SPIDERMAN===========SPIDERMAN===================SPIDERMAN=================== */
+
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rock+Salt&display=swap');
+
 body.spiderman {
     background-color: #b40b0d !important;
 }
 
 .btn-morales {
     background-color: #17363a;
+    font-family: 'Rock Salt', cursive;
 }
 
 .btn-spiderman {
     background-color: #1A233B;
+    font-family: 'Rock Salt', cursive;
 }
+
+.morales-musica{
+    border: 4px solid #17363a; /* Borde verde azulado */
+    font-family: "Permanent Marker", cursive;
+    
+}
+
+.spiderman-musica{
+    border: 4px solid #1A233B; /* Borde azulado */
+     font-family: "Permanent Marker", cursive;
+   
+}
+
+/* =========================================
+   ESTILO DE LA LÍNEA SEPARADORA
+   ========================================= */
 
 
 /* Pantallas grandes (Tablets y Monitores) */
