@@ -39,6 +39,13 @@ body {
     font-family: "Space Grotesk", sans-serif;
 }
 
+.explicacion {
+    padding: 20px;
+    margin: 20px auto; /* Centra la explicación y añade espacio arriba y abajo */
+    max-width: 800px; /* Limita el ancho para que no se extienda demasiado en pantallas grandes */
+    text-align: left;
+}
+
 /* Estilos para los enlaces/botones de juegos */
 
 .game-button{
