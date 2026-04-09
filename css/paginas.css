@@ -218,6 +218,11 @@ body.spiderman {
 }
 
 .morales-musica{
+    border-radius: 12px;
+    padding: 20px; /* Padding superior extra para no chocar con el icono */
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.636);
     font-family: "Permanent Marker", cursive;
     color: #cf1919;
     
@@ -229,6 +234,60 @@ body.spiderman {
      color: #ac1717;
    
 }
+/* JEDI ================= JEDI ================= JEDI */
+
+body.jedi {
+    background-color: #36271f;
+}
+
+.jedi-btn {
+    margin-top: 10px;
+    background-color: #d2923a;
+    color:#36271f
+}
+
+.jedi1-titulo{
+margin-top: 20px;
+    width: 55% !important; /* El  obliga a que esta regla mande sobre las demás */
+    height: auto; /* Asegúrate de que el alto sea automático para no deformarla */
+}
+
+.jedi2-titulo{
+    width: 55% !important;
+    /* background-color: #888; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.jedi1-container {
+  border: 2px solid #00BFFF; /* Azul Cyan */
+  box-shadow: 
+    0 0 5px #00BFFF,      /* Brillo interno */
+    0 0 10px #00BFFF,     /* Brillo medio */
+    0 0 20px #00BFFF,     /* Brillo externo */
+    0 0 40px #00BFFF;     /* Resplandor */
+}
+
+.jedi2-container {
+  border: 2px solid #32CD32; /* Verde Lima/Sable */
+  box-shadow: 
+    0 0 5px #32CD32,
+    0 0 10px #32CD32,
+    0 0 20px #32CD32,
+    0 0 20px #32CD32;
+}
+
+.jedi-musica {
+    background: #6b4b1e; /* Un fondo más sutil para que no pese tanto visualmente */
+    border: 1px solid #d99b45; /* Un borde fino con tu color de Miles */
+    font-family: "Permanent Marker", cursive;
+    color: #d2923a;
+}
+
+.jedi-lista-musica {
+    color: rgb(214, 219, 223);
+}
+
 
 /* =========================================
    ESTILO DE LA LÍNEA SEPARADORA
@@ -272,6 +331,21 @@ body.spiderman {
 
     }
 }
+
+/* JEDI ================= JEDI ================= JEDI */
+
+    .jedi1-titulo{
+        margin-top: 20px;
+        width: 34% !important ;
+        /* background-color: #888; */
+    }
+
+    .jedi2-titulo{
+        width: 33% !important;
+        /* background-color: #888; */
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 
  /* 3. PANTALLAS GRANDES (Monitores: 1024px o más)
    ========================================= */
@@ -343,4 +417,19 @@ body.spiderman {
         border: 1px solid #ac1717; /* Un borde fino con tu color de Miles */
     }
 }
+
+/* JEDI ================= JEDI ================= JEDI */
+
+    .jedi1-titulo{
+        margin-top: 20px;
+        width: 22% ;
+        /* background-color: #888; */
+    }
+
+    .jedi2-titulo{
+        /* background-color: #888; */
+        margin-top: 20px;
+        width: 22% ;
+        margin-bottom: 40px;
+    }
 
