@@ -35,15 +35,12 @@ body {
 }
 
 .intro p {
-    text-align: center;
+    text-align: left;
     font-family: "Space Grotesk", sans-serif;
 }
 
 .explicacion {
-    padding: 20px;
-    margin: 20px auto; /* Centra la explicación y añade espacio arriba y abajo */
-    max-width: 800px; /* Limita el ancho para que no se extienda demasiado en pantallas grandes */
-    text-align: left;
+    margin: 0px 20px 0px 20px; 
 }
 
 /* Estilos para los enlaces/botones de juegos */
@@ -171,6 +168,10 @@ body {
     BODY {
         background-color: #330352; /*FONDO TEMPORAL*/
     }
+
+    .explicacion {
+    margin: 0px 90px 0px 90px; 
+}
 
     .neon {
         font-size: 60px;
