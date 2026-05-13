@@ -288,7 +288,123 @@ margin-top: 20px;
     color: rgb(214, 219, 223);
 }
 
+/*  ================= Mass Effect ================= */
 
+
+body.massEffect {
+    background-color: rgb(1, 1, 39); /* Color de seguridad por si falla la imagen */
+}
+
+
+
+/* Ahora ajusta el contenedor a un tamaño razonable */
+.effect2-titulo {
+    margin: 20px auto; 
+    width: 250px;      
+    max-width: 90%;    
+}
+
+.effect3-titulo{
+    margin: 20px auto; 
+    width: 300px;      
+    max-width: 90%; 
+}
+
+.effect4-titulo{
+    margin: 20px auto; 
+    width: 250px;      
+    max-width: 90%; 
+}
+
+.todo-massEffect2 {
+    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
+    background-image: url('../img/monitor/fondomass2.jpg');
+    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    background-position: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
+}
+
+.todo-massEffect3 {
+    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
+    background-image: url('../img/monitor/fondomass3.jpg');
+    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    background-position: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
+}
+
+.todo-massEffect4 {
+    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
+    background-image: url('../img/monitor/fondomass4.jpg');
+    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    background-position: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
+}
+
+
+.massEffect-btn {
+    margin-top: 10px;
+    background-color: #040c39;
+    color:#ebe6e3
+}
+
+
+.effect2-container {
+  border: 2px solid #ef6013; /* Azul Cyan */
+  box-shadow: 
+    0 0 5px #ef6013,      /* Brillo interno */
+    0 0 10px #ef6013,     /* Brillo medio */
+    0 0 15px #ef6013,     /* Brillo externo */
+    0 0 15px #ef6013;     /* Resplandor */
+}
+
+.effect3-container {
+  border: 2px solid #e63c3c; /* Verde Lima/Sable */
+  box-shadow: 
+    0 0 5px #e63c3c,
+    0 0 10px #e63c3c,
+    0 0 15px #e63c3c,
+    0 0 15px #e63c3c;
+}
+
+.andro-container {
+  border: 2px solid #8c98f5; /* Verde Lima/Sable */
+  box-shadow: 
+    0 0 5px #8c98f5,
+    0 0 10px #8c98f5,
+    0 0 15px #8c98f5,
+    0 0 15px #8c98f5;
+}
+
+.massEffect-musica {
+    background: #040c3998; /* Un fondo más sutil para que no pese tanto visualmente */
+    border: 1px solid #707ee8; /* Un borde fino con tu color de Miles */
+    font-family: "Permanent Marker", cursive;
+    color: #707ee8;
+}
+
+.massEffect2-info{
+    background-color: #52200399;
+    border-radius: 20px;
+} 
+
+.massEffect3-info {
+    background-color: #52030399;
+    border-radius: 20px;
+} 
+
+.massEffect4-info {
+    background-color: #35055699;
+    border-radius: 20px;
+} 
 /* =========================================
    ESTILO DE LA LÍNEA SEPARADORA
    ========================================= */
@@ -346,6 +462,27 @@ margin-top: 20px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+/* mass effect ================= mass effect ================= mass effect */
+.effect2-titulo {
+    margin: 20px auto; 
+    width: 350px;      
+    max-width: 90%;    
+}
+
+.effect3-titulo{
+    margin: 20px auto; 
+    width: 400px;      
+    max-width: 90%; 
+}
+
+.effect4-titulo{
+    margin: 20px auto; 
+    width: 350px;      
+    max-width: 90%; 
+}
+
+
 
  /* 3. PANTALLAS GRANDES (Monitores: 1024px o más)
    ========================================= */
@@ -432,4 +569,24 @@ margin-top: 20px;
         width: 22% ;
         margin-bottom: 40px;
     }
+
+/* mass effect ================= mass effect ================= mass effect */
+.effect2-titulo {
+    margin: 20px auto; 
+    width: 450px;      
+    max-width: 90%;    
+}
+
+.effect3-titulo{
+    margin: 20px auto; 
+    width: 500px;      
+    max-width: 90%; 
+}
+
+.effect4-titulo{
+    margin: 20px auto; 
+    width: 450px;      
+    max-width: 90%; 
+}
+
 
