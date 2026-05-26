@@ -328,7 +328,7 @@ body.massEffect {
 }
 
 .todo-massEffect3 {
-    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
+    background-color: rgb(206, 16, 10); /* Color de seguridad por si falla la imagen */
     background-image: url('../img/monitor/fondomass3.jpg');
     background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
     background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
@@ -339,7 +339,7 @@ body.massEffect {
 }
 
 .todo-massEffect4 {
-    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
+    background-color: rgb(86, 5, 139); /* Color de seguridad por si falla la imagen */
     background-image: url('../img/monitor/fondomass4.jpg');
     background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
     background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
