@@ -15,7 +15,7 @@
 
 
 /* El botón de volver */
-.btn-volver {
+/* .btn-volver {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
@@ -25,14 +25,14 @@
     border: 1px solid #444;
     transition: all 0.3s ease;
     background-color: #14c9e1;
-}
+} */
 
 
-.btn-volver:hover {
+/* .btn-volver:hover {
     background-color: #3a3a3a;
-    border-color: #00ffcc; /* Toque neón al pasar el ratón */
-    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
-}
+    border-color: #00ffcc; 
+    transform: translateX(-5px); 
+} */
 
 /* imagen del título */
 .titulo-juego {
@@ -171,240 +171,66 @@
     color: #ff0000; /* El rojo de Spider-Man para resaltar la fecha */
 }
 
-/* =SPIDERMAN===========SPIDERMAN===================SPIDERMAN=================== */
 
 /* FUENTES */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rock+Salt&display=swap');
 
-body.spiderman {
-    background-color: #b40b0d;
-}
 
-.morales-grid {
-    background-color: #17363a;
-    border-radius: 20px;
-}
+/* =========== DEADPOOL ======================= */
 
-.spiderman-grid {
-    background-color: #1A233B;
-    border-radius: 20px;
-}
-
-.btn-morales {
-    background-color: #17363a;
-    font-family: 'Rock Salt', cursive;
-}
-
-.btn-spiderman {
-    background-color: #1A233B;
-    font-family: 'Rock Salt', cursive;
-}
-
-.morales-titulo{
-    width: 55%;
-        margin-top: 40px;
-        background-color: #17363a;
-        border-radius: 20px 20px 0 0;
-        padding: 0 8% 0 8%;
-    }
-
-
-.spiderman-titulo{
-    width: 60%;
-    margin-top: 40px;
-    background-color: #1A233B;
-    border-radius: 20px 20px 0 0;
-}
-
-.morales-musica{
-    border-radius: 12px;
-    padding: 20px; /* Padding superior extra para no chocar con el icono */
-    text-align: center;
-    color: #ffffff;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.636);
-    font-family: "Permanent Marker", cursive;
-    color: #cf1919;
-    
-}
-
-.spiderman-musica{
-    border: 4px solid #1A233B; /* Borde azulado */
-     font-family: "Permanent Marker", cursive;
-     color: #ac1717;
-   
-}
-/* JEDI ================= JEDI ================= JEDI */
-
-body.jedi {
-    background-color: #36271f;
-}
-
-.jedi-btn {
-    margin-top: 10px;
-    background-color: #d2923a;
-    color:#36271f
-}
-
-.jedi1-titulo{
-margin-top: 20px;
-    width: 55% !important; /* El  obliga a que esta regla mande sobre las demás */
-    height: auto; /* Asegúrate de que el alto sea automático para no deformarla */
-}
-
-.jedi2-titulo{
-    width: 55% !important;
-    /* background-color: #888; */
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.jedi1-container {
-  border: 2px solid #00BFFF; /* Azul Cyan */
-  box-shadow: 
-    0 0 5px #00BFFF,      /* Brillo interno */
-    0 0 10px #00BFFF,     /* Brillo medio */
-    0 0 20px #00BFFF,     /* Brillo externo */
-    0 0 40px #00BFFF;     /* Resplandor */
-}
-
-.jedi2-container {
-  border: 2px solid #32CD32; /* Verde Lima/Sable */
-  box-shadow: 
-    0 0 5px #32CD32,
-    0 0 10px #32CD32,
-    0 0 20px #32CD32,
-    0 0 20px #32CD32;
-}
-
-.jedi-musica {
-    background: #6b4b1e; /* Un fondo más sutil para que no pese tanto visualmente */
-    border: 1px solid #d99b45; /* Un borde fino con tu color de Miles */
-    font-family: "Permanent Marker", cursive;
-    color: #d2923a;
-}
-
-.jedi-lista-musica {
-    color: rgb(214, 219, 223);
-}
-
-/*  ================= Mass Effect ================= */
-
-
-body.massEffect {
-    background-color: rgb(1, 1, 39); /* Color de seguridad por si falla la imagen */
+body.dead {
+    background-color: #510404;
 }
 
 
 
-/* Ahora ajusta el contenedor a un tamaño razonable */
-.effect2-titulo {
+.dead-titulo {
     margin: 20px auto; 
     width: 250px;      
     max-width: 90%;    
 }
 
-.effect3-titulo{
-    margin: 20px auto; 
-    width: 300px;      
-    max-width: 90%; 
+.dead-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #111010;
+    transition: all 0.3s ease;
+    background-color: #000000;
 }
 
-.effect4-titulo{
-    margin: 20px auto; 
-    width: 250px;      
-    max-width: 90%; 
-}
-
-.todo-massEffect2 {
-    background-color: rgb(218, 108, 11); /* Color de seguridad por si falla la imagen */
-    background-image: url('../img/monitor/fondomass2.jpg');
-    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
-    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
-    background-position: center;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
-}
-
-.todo-massEffect3 {
-    background-color: rgb(206, 16, 10); /* Color de seguridad por si falla la imagen */
-    background-image: url('../img/monitor/fondomass3.jpg');
-    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
-    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
-    background-position: center;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
-}
-
-.todo-massEffect4 {
-    background-color: rgb(86, 5, 139); /* Color de seguridad por si falla la imagen */
-    background-image: url('../img/monitor/fondomass4.jpg');
-    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
-    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
-    background-position: center;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Un resplandor suave para darle un toque espacial */
+.dead-btn:hover {
+    background-color: #2d0202;
+    border-color: #ff0d00; /* Toque neón al pasar el ratón */
+    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
 }
 
 
-.massEffect-btn {
-    margin-top: 10px;
-    background-color: #040c39;
-    color:#ebe6e3
-}
 
-
-.effect2-container {
-  border: 2px solid #ef6013; /* Azul Cyan */
-  box-shadow: 
-    0 0 5px #ef6013,      /* Brillo interno */
-    0 0 10px #ef6013,     /* Brillo medio */
-    0 0 15px #ef6013,     /* Brillo externo */
-    0 0 15px #ef6013;     /* Resplandor */
-}
-
-.effect3-container {
-  border: 2px solid #131452; /* Verde Lima/Sable */
-  box-shadow: 
-    0 0 5px #131452,
-    0 0 10px #131452,
-    0 0 15px #131452,
-    0 0 15px #131452;
-}
-
-.andro-container {
-  border: 2px solid #7812bc; /* Verde Lima/Sable */
-  box-shadow: 
-    0 0 5px #7812bc,
-    0 0 10px #7812bc,
-    0 0 15px #7812bc,
-    0 0 15px #7812bc;
-}
-
-.massEffect-musica {
-    background: #040c3998; /* Un fondo más sutil para que no pese tanto visualmente */
-    border: 1px solid #707ee8; /* Un borde fino con tu color de Miles */
+.dead-musica {
+    border: 1px solid #000000; /* Un borde fino con tu color de Miles */
     font-family: "Permanent Marker", cursive;
-    color: #707ee8;
 }
 
-.massEffect2-info{
-    background-color: #52200399;
-    border-radius: 20px;
+.dead-info{
+    border: 5px solid #000000; /* Un borde fino con tu color de Miles */
+    border-radius: 10px;
 } 
 
-.massEffect3-info {
-    background-color: #0f103799;
-    border-radius: 20px;
-} 
+.dead-clips{
+    font-family: "Permanent Marker", cursive;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
 
-.massEffect4-info {
-    background-color: #35055699;
-    border-radius: 20px;
-} 
+
 /* =========================================
    ESTILO DE LA LÍNEA SEPARADORA
    ========================================= */
@@ -421,67 +247,28 @@ body.massEffect {
         padding: 40px; /* Da un poco de aire alrededor de la cuadrícula */
     }
 
-/* =SPIDERMAN===========SPIDERMAN===================SPIDERMAN=================== */
 
-    .morales-titulo{
-        width: 30%;
-        margin-top: 40px;
-        background-color: #17363a;
-        border-radius: 20px 20px 0 0;
-        padding: 0 2% 0 2%;
-        margin-left: 5%;/* Ajusta el padding para centrar el texto dentro del título */
-    }
 
-    .musica{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;    /* 1. La convertimos en bloque rígido */
-        width: 70%;        
-        grid-column: 1 / -1; /* Esto le dice: 'ocupa desde la columna 1 hasta el final' */
-        margin-top: 40px;
-    }
-
-    .spiderman-titulo{
-        width: 36%;
-        margin-top: 40px;
-
-    }
-}
-
-/* JEDI ================= JEDI ================= JEDI */
-
-    .jedi1-titulo{
-        margin-top: 20px;
-        width: 34% !important ;
-        /* background-color: #888; */
-    }
-
-    .jedi2-titulo{
-        width: 33% !important;
-        /* background-color: #888; */
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-/* mass effect ================= mass effect ================= mass effect */
-.effect2-titulo {
+/* dead ================= dead ================= dead */
+.dead-titulo {
     margin: 20px auto; 
-    width: 350px;      
+    width: 450px;      
     max-width: 90%;    
 }
 
-.effect3-titulo{
-    margin: 20px auto; 
-    width: 400px;      
-    max-width: 90%; 
+.dead-info{
+    border: 5px solid #000000; /* Un borde fino con tu color de Miles */
+    border-radius: 10px;
+    width: 80%;
+  
+} 
+
+.dead-container {
+ width: 130%;
 }
 
-.effect4-titulo{
-    margin: 20px auto; 
-    width: 350px;      
-    max-width: 90%; 
-}
 
+}
 
 
  /* 3. PANTALLAS GRANDES (Monitores: 1024px o más)
@@ -528,65 +315,38 @@ body.massEffect {
 }
 
 
-/* =SPIDERMAN===========SPIDERMAN===================SPIDERMAN=================== */
+/* dead ================= dead ================= dead */
 
-    .morales-titulo{
-        width: 26%;
-        margin-top: 40px;
-        background-color: #17363a;
-        border-radius: 20px 20px 0 0;
-        padding: 0 2% 0 2%;
-        margin-left: 5%;/* Ajusta el padding para centrar el texto dentro del título */
-    }
-
-    .spiderman-titulo{
-        width: 33%;
-        margin-top: 40px;
-    }
-    
-    .morales-musica {
-        background: #153135; /* Un fondo más sutil para que no pese tanto visualmente */
-        border: 1px solid #ac1717; /* Un borde fino con tu color de Miles */
-    }
-
-    .spiderman-musica {
-        background: #151d30; /* Un fondo más sutil para que no pese tanto visualmente */
-        border: 1px solid #ac1717; /* Un borde fino con tu color de Miles */
-    }
-}
-
-/* JEDI ================= JEDI ================= JEDI */
-
-    .jedi1-titulo{
-        margin-top: 20px;
-        width: 22% ;
-        /* background-color: #888; */
-    }
-
-    .jedi2-titulo{
-        /* background-color: #888; */
-        margin-top: 20px;
-        width: 22% ;
-        margin-bottom: 40px;
-    }
-
-/* mass effect ================= mass effect ================= mass effect */
-.effect2-titulo {
+.dead-titulo {
     margin: 20px auto; 
-    width: 450px;      
+    width: 500px;      
     max-width: 90%;    
 }
 
-.effect3-titulo{
-    margin: 20px auto; 
-    width: 500px;      
-    max-width: 90%; 
+.dead-info{
+    border: 5px solid #000000; /* Un borde fino con tu color de Miles */
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 20%;
+} 
+
+.dead-container {
+ width: 130%;
 }
 
-.effect4-titulo{
-    margin: 20px auto; 
-    width: 450px;      
-    max-width: 90%; 
+.dead-info-clip{
+    border: 5px solid #000000; /* Un borde fino con tu color de Miles */
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 15%;
 }
 
+.dead-info-video{
+    border: 5px solid #000000; /* Un borde fino con tu color de Miles */
+    border-radius: 10px;
+    width: 130%;
+    height: 50%;
+    margin-left: 30%;
+}
 
+}

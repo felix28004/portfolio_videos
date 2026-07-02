@@ -247,7 +247,7 @@ body.jedi {
 }
 
 .jedi1-titulo{
-margin-top: 20px;
+    margin-top: 20px;
     width: 55% !important; /* El  obliga a que esta regla mande sobre las demás */
     height: auto; /* Asegúrate de que el alto sea automático para no deformarla */
 }
