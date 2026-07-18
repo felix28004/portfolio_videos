@@ -1,7 +1,3 @@
-/* =========================================
-   ESTILOS PARA SAGA spiderman
-   ========================================= */
-
 /* Cabecera de la página */
 .juego-header {
     text-align: center;
@@ -51,7 +47,6 @@
    
 }
 
-/* Contenedor responsivo para que el iframe no se rompa */
 .video-container {
     position: relative;
     width: 100%;
@@ -230,6 +225,143 @@ body.dead {
     font-size: 2rem;
 }
 
+/* gotham================= gotham================= gotham*/
+
+body.gotham {
+    background-color: #330980; /* Color de seguridad por si falla la imagen */
+    background-image: url('../img/movil/fondogotham.png');
+    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    background-position: center;
+}
+
+.gotham-titulo {
+    margin: 20px auto; 
+    width: 250px;      
+    max-width: 90%;    
+}
+
+.gotham-btn{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #111010;
+    transition: all 0.3s ease;
+    background-color: #000000;
+}
+
+.gotham-btn:hover {
+    background-color: #0d022d;
+    border-color: #ff0000; /* Toque neón al pasar el ratón */
+    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
+}
+
+.gotham-container {
+animation: neon-parpadeo-intenso 3s linear infinite;
+    border: 2px solid #D2B4FF; /* El núcleo claro del neón */
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto;
+    
+  
+  /* La magia del neón: combinación de brillos internos y externos */
+    box-shadow: 
+        0 0 8px #8B30FF,      /* Brillo medio */
+        0 0 20px #8B30FF,     /* Brillo intenso */
+        0 0 40px #540099,     /* Brillo exterior difuminado */
+        inset 0 0 10px #8B30FF; /* Brillo hacia dentro del vídeo */
+    
+
+}
+
+/* =========================================
+   ANIMACIÓN DE NEÓN PARPADEANDO INTENSO
+   ========================================= */
+
+
+@keyframes neon-parpadeo-intenso {
+    0%, 1.25%, 3.5%, 6% {
+        /* Brillo medio inicial, desigual */
+        box-shadow: 
+            0 0 10px #8B30FF, 
+            0 0 20px #8B30FF, 
+            0 0 40px #540099, 
+            inset 0 0 10px #8B30FF;
+        border-color: #D2B4FF;
+    }
+    1.25%, 1.75%, 4%, 4.5%, 5.5% {
+        /* Atenuación brusca y rápida, efecto 'glitch' */
+        box-shadow: 
+            0 0 4px #8B30FF, 
+            0 0 8px rgba(84, 0, 153, 0.5), /* Muy poca luz exterior */
+            0 0 12px rgba(84, 0, 153, 0.3), 
+            inset 0 0 3px rgba(84, 0, 153, 0.4);
+        border-color: rgba(210, 180, 255, 0.6); /* El núcleo se debilita */
+    }
+    1.75%, 2.25%, 4.75%, 5.25% {
+        /* Pequeño destello estático */
+        box-shadow: 
+            0 0 15px #9636FF, 
+            0 0 40px #9636FF, 
+            0 0 60px #540099, 
+            inset 0 0 18px #9636FF;
+        border-color: #D2B4FF;
+    }
+    2.25%, 2.75%, 5.75%, 6.25% {
+        /* Estado de 'casi apagado' para simular neón inestable */
+        box-shadow: none; /* Brillo completamente apagado en un micro-instante */
+        border-color: rgba(210, 180, 255, 0.2); /* Solo el borde metálico visible */
+    }
+    /* Resto de la animación para mantener el parpadeo irregular */
+    6.25%, 100% {
+        box-shadow: 
+            0 0 10px #8B30FF, 
+            0 0 30px #8B30FF, 
+            0 0 50px #540099, 
+            inset 0 0 15px #8B30FF;
+        border-color: #D2B4FF;
+    }
+}
+
+
+.gotham-musica {
+    background: #330980d1; /* Un fondo más sutil para que no pese tanto visualmente */
+    border: 3px solid #d0da0b; 
+    font-family: "Permanent Marker", cursive;
+    color: #e71e1e;
+}
+
+    .gotham-clips {
+        font-family: "Permanent Marker", cursive;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+.gotham-info{
+    border: 2px solid #1628e4; /* Un borde fino con tu color de Miles */
+    background-color: #020202b1;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.gotham-placeholder {
+    background: linear-gradient(45deg, #64ac1c, #330980);
+    border: 2px dashed #444; /* Estilo de 'hueco por rellenar' */
+    color: #888;
+}
+
+.gotham-fecha-estreno {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #f9f6f6; /* El rojo de Spider-Man para resaltar la fecha */
+}
 
 /* =========================================
    ESTILO DE LA LÍNEA SEPARADORA
@@ -265,6 +397,32 @@ body.dead {
 
 .dead-container {
  width: 130%;
+}
+
+/* gotham================= gotham================= gotham*/
+
+body.gotham {
+    background-color: #330980; /* Color de seguridad por si falla la imagen */
+    background-image: url('../img/monitor/fondogotham.png');
+    background-size: cover;    /* Para que cubra toda la pantalla sin repetirse feo */
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    background-position: center;
+}
+
+.gotham-titulo {
+    margin: 20px auto; 
+    width: 450px;      
+    max-width: 90%;    
+}
+
+.gotham-container {
+    position: relative;
+    width: 140%;    
+}
+
+.gotham-info{
+    width: 70%;
+    margin-left: 20%;
 }
 
 
@@ -347,6 +505,24 @@ body.dead {
     width: 130%;
     height: 50%;
     margin-left: 30%;
+}
+
+/* gotham ================= gotham ================= gotham */
+
+.gotham-titulo {
+    margin: 20px auto; 
+    width: 500px;      
+    max-width: 90%;    
+}
+
+.gotham-container {
+    position: relative;
+    width: 140%;    
+}
+
+.gotham-info{
+    width: 70%;
+    margin-left: 20%;
 }
 
 }
