@@ -355,6 +355,7 @@ animation: neon-parpadeo-intenso 3s linear infinite;
     background: linear-gradient(45deg, #64ac1c, #330980);
     border: 2px dashed #444; /* Estilo de 'hueco por rellenar' */
     color: #888;
+    
 }
 
 .gotham-fecha-estreno {
@@ -415,15 +416,43 @@ body.gotham {
     max-width: 90%;    
 }
 
-.gotham-container {
-    position: relative;
-    width: 140%;    
-}
+.gotham-grupo2-container {
+        width: 95%; /* Aprovechamos casi toda la pantalla */
+    }
 
-.gotham-info{
-    width: 70%;
-    margin-left: 20%;
-}
+    .gotham-grid {
+        /* Pasamos de 4 a 2 columnas para que las miniaturas no se vean enanas */
+        grid-template-columns: repeat(2, 1fr); 
+        margin-right: 0; 
+        gap: 20px; /* Aseguramos un respiro entre los vídeos */
+    }
+
+    .gotham-info {
+        width: 95%; /* Expandimos la información */
+        margin-left: 0; 
+    }
+
+    .uno {
+        /* Anulamos el margen negativo para evitar desbordes fuera de la pantalla */
+        margin-left: 0; 
+    }
+
+    .gotham-grid2 {
+        /* Pasamos de 3 a 2 (o 1) columnas para equilibrar la cuadrícula */
+        grid-template-columns: repeat(2, 1fr); 
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .gotham2-info {
+        width: 95%;
+        margin-left: 0;  
+    }
+
+    .dos {
+        /* Anulamos el margen negativo de nuevo */
+        margin-left: 0; 
+    }
 
 
 }
@@ -481,6 +510,11 @@ body.gotham {
     max-width: 90%;    
 }
 
+.dead-grid{
+   
+    margin-left:15%
+}
+
 .dead-info{
     border: 5px solid #000000; /* Un borde fino con tu color de Miles */
     border-radius: 10px;
@@ -515,14 +549,48 @@ body.gotham {
     max-width: 90%;    
 }
 
+
+
 .gotham-container {
     position: relative;
-    width: 140%;    
+    width: 115%; 
+
+    
+}
+
+.gotham-grupo2-container{
+    width: 80%; 
+    
+}
+
+.gotham-grid{
+    grid-template-columns: repeat(4, 1fr); 
+    margin-right: 5%;
+
 }
 
 .gotham-info{
     width: 70%;
-    margin-left: 20%;
+    margin-left: 9%; 
+}
+
+.uno{
+    margin-left: -20%;
+
+}
+
+.gotham-grid2{
+    grid-template-columns: repeat(3, 1fr); 
+    margin-left: 7%;
+}
+
+.gotham2-info{
+    width: 80%;
+    margin-left: -8%;  
+}
+
+.dos{
+    margin-left: -15%;
 }
 
 }
