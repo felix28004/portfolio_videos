@@ -171,13 +171,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Permanent+Marker&family=Rock+Salt&display=swap');
 
+/* =========== RECAP ======================= */
+
+
+body.recap {
+    background-color: #780aa3;
+}
+
+/* .recap-titulo {
+    margin: 20px auto; 
+    width: 250px;      
+    max-width: 90%;    
+} */
+
+
+.recap-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #111010;
+    transition: all 0.3s ease;
+    background-color: #000000;
+}
+
+.texto-recap {
+    font-family: "Permanent Marker", cursive;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
 
 /* =========== DEADPOOL ======================= */
 
 body.dead {
     background-color: #510404;
 }
-
 
 
 .dead-titulo {
