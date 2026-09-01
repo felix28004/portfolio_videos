@@ -175,7 +175,7 @@
 
 
 body.recap {
-    background-color: #780aa3;
+    background-color: #1c20a4;
 }
 
 /* .recap-titulo {
@@ -194,7 +194,13 @@ body.recap {
     margin-bottom: 20px;
     border: 1px solid #111010;
     transition: all 0.3s ease;
-    background-color: #000000;
+    background-color: #030a40;
+}
+
+.recap-btn:hover {
+    background-color: #030a40;
+    border-color: #3d4fdd; /* Toque neón al pasar el ratón */
+    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
 }
 
 .texto-recap {
