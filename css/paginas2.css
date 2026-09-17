@@ -300,7 +300,7 @@ body.gotham {
 }
 
 .gotham-container {
-animation: neon-parpadeo-intenso 3s linear infinite;
+animation: neon-parpadeo-gotham 3s linear infinite;
     border: 2px solid #D2B4FF; /* El núcleo claro del neón */
     border-radius: 12px;
     width: 90%;
@@ -322,7 +322,7 @@ animation: neon-parpadeo-intenso 3s linear infinite;
    ========================================= */
 
 
-@keyframes neon-parpadeo-intenso {
+@keyframes neon-parpadeo-gotham{
     0%, 1.25%, 3.5%, 6% {
         /* Brillo medio inicial, desigual */
         box-shadow: 
@@ -364,6 +364,51 @@ animation: neon-parpadeo-intenso 3s linear infinite;
             inset 0 0 15px #8B30FF;
         border-color: #D2B4FF;
     }
+
+}
+
+@keyframes neon-parpadeo-ghostwire {
+    0%, 1.25%, 3.5%, 6% {
+        /* Brillo medio inicial, desigual. Tono Cian Base */
+        box-shadow: 
+            0 0 10px #00f0ff, 
+            0 0 20px #00f0ff, 
+            0 0 40px rgba(0, 240, 255, 0.6), /* Sombra exterior más suave */
+            inset 0 0 10px #00f0ff;
+        border-color: #b3faff; /* Núcleo casi blanco con tinte cian */
+    }
+    1.25%, 1.75%, 4%, 4.5%, 5.5% {
+        /* Atenuación brusca y rápida, efecto 'glitch'. El color se desvanece */
+        box-shadow: 
+            0 0 4px #00f0ff, 
+            0 0 8px rgba(0, 240, 255, 0.3), /* Muy poca luz exterior */
+            0 0 12px rgba(0, 240, 255, 0.1), 
+            inset 0 0 3px rgba(0, 240, 255, 0.2);
+        border-color: rgba(179, 250, 255, 0.5); /* El núcleo se debilita */
+    }
+    1.75%, 2.25%, 4.75%, 5.25% {
+        /* Pequeño destello estático. Tono Cian Intenso */
+        box-shadow: 
+            0 0 15px #00f0ff, 
+            0 0 40px #00f0ff, 
+            0 0 60px rgba(0, 240, 255, 0.8), 
+            inset 0 0 18px #00f0ff;
+        border-color: #b3faff;
+    }
+    2.25%, 2.75%, 5.75%, 6.25% {
+        /* Estado de 'casi apagado'. Solo queda el rastro del gas */
+        box-shadow: none; /* Brillo completamente apagado en un micro-instante */
+        border-color: rgba(179, 250, 255, 0.15); /* Solo el contorno sutil visible */
+    }
+    /* Resto de la animación para mantener el parpadeo irregular. Estado estable */
+    6.25%, 100% {
+        box-shadow: 
+            0 0 10px #00f0ff, 
+            0 0 30px #00f0ff, 
+            0 0 50px rgba(0, 240, 255, 0.7), 
+            inset 0 0 15px #00f0ff;
+        border-color: #b3faff;
+    }
 }
 
 
@@ -403,6 +448,64 @@ animation: neon-parpadeo-intenso 3s linear infinite;
     margin-top: 10px;
     color: #f9f6f6; /* El rojo de Spider-Man para resaltar la fecha */
 }
+
+
+/* ghostwire ================= ghostwire ================= ghostwire */
+
+body.ghostwire {
+    background-color: #0f1037;
+}
+
+
+.ghostwire-titulo {
+    margin: 20px auto; 
+    width: 250px;      
+    max-width: 90%;    
+    margin-bottom: 35px;
+}
+
+.ghostwire-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #111010;
+    transition: all 0.3s ease;
+    background-color: #4e08e6;
+}
+
+.ghostwire-btn:hover {
+    background-color: #1a022d;
+    border-color: #8400ff; /* Toque neón al pasar el ratón */
+    transform: translateX(-5px); /* Se mueve un poco hacia la izquierda */
+}
+
+.ghostwire-container {
+    animation: neon-parpadeo-ghostwire 3s linear infinite;
+    border: 2px solid #D2B4FF; /* El núcleo claro del neón */
+    border-radius: 12px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ghostwire-info{
+    border: 2px solid #00ffd5; /* Un borde fino con tu color de Miles */
+    background-color: #020202b1;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 2%;
+    padding-top: 0px;
+}
+
+
+.ghostwire-musica {
+    border: 1px solid #000000; /* Un borde fino con tu color de Miles */
+    font-family: "Permanent Marker", cursive;
+}
+
+
 
 /* =========================================
    ESTILO DE LA LÍNEA SEPARADORA
@@ -494,6 +597,36 @@ body.gotham {
         margin-left: 0; 
     }
 
+
+/* ghostwire ================= ghostwire ================= ghostwire */
+
+.ghostwire-titulo {
+    margin: 20px auto; 
+    width: 450px;      
+    max-width: 90%;    
+}
+
+.ghostwire-container {
+    animation: neon-parpadeo-ghostwire 3s linear infinite;
+    border: 2px solid #b3faff; /* Tono cian claro para hacer juego con el #00f0ff */
+    border-radius: 12px;
+    width: 100%; /* Mejor al 100% del espacio de su celda */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción idéntica a un vídeo de YouTube */
+    overflow: hidden; /* Evita que el placeholder o iframe se desborde */
+    box-sizing: border-box;
+}
+
+.ghostwire-info {
+    width: 95%; /* Expandimos la información */
+    margin-left: 0; 
+    padding-top: 0px;
+}
+
+.ghostwire-musica {
+    grid-column: 1 / -1; /* Ocupa todas las columnas del grid */
+    text-align: center;
+    margin-top: 40px;
+}
 
 }
 
@@ -593,9 +726,7 @@ body.gotham {
 
 .gotham-container {
     position: relative;
-    width: 115%; 
-
-    
+    width: 115%;  
 }
 
 .gotham-grupo2-container{
@@ -632,5 +763,29 @@ body.gotham {
 .dos{
     margin-left: -15%;
 }
+
+/* ghostwire ================= ghostwire ================= ghostwire */
+
+.ghostwire-titulo {
+    margin: 20px auto; 
+    width: 550px;      
+    max-width: 90%;  
+    margin-bottom: 40px;  
+}
+
+
+.ghostwire-container {
+    width: 169%; 
+
+}
+
+.ghostwire-info{
+    width: 70%;
+    margin-left: 25%; 
+  
+}
+
+h3.ghostwire-titulo {
+   margin-bottom: 2px; /* Ajusta el espacio entre el título y la descripción */
 
 }
